@@ -10,12 +10,7 @@ function BMICalculator(mass, height) {
     {
         return "INVALID INPUT"
     }
-let mass=parseInt(readLine());
-let height=parseInt(readLine());
-
 }
-BMICalculator(mass,height);
-
 module.exports = BMICalculator;
 
 
