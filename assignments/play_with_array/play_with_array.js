@@ -44,9 +44,21 @@ function removeNthElement(arr, n) {
             Output: [1,3,4,7]
         Write you code below
     */
+        b=[]
+        for(let i=0;i<arr.length;i++)
+        {if(i===n)
+            {
+                continue;
+            }
+             else
+            {
+                b.push(arr[i])
+            }
+        }
+        return b
         
-        let removed = arr.splice(n,1);
-        return (arr)
+        // let removed = arr.splice(n,1);
+        // return (arr)
 }
 
 module.exports = {
