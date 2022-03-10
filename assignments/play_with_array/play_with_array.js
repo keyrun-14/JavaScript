@@ -7,7 +7,8 @@ function getEven(arr) {
 
         Write you code below
     */
-
+  
+   return arr.filter((n)=>n%2==0)
 }
 
 function multiplyByN(arr, n) {
@@ -18,7 +19,7 @@ function multiplyByN(arr, n) {
             Output: [3,9,13,165]
         Write you code below
     */
-}
+   return arr.map((k)=>k*n)
 
 function removeNthElement(arr, n) {
     /*
@@ -28,6 +29,21 @@ function removeNthElement(arr, n) {
             Output: [1,3,4,7]
         Write you code below
     */
+        b=[]
+        for(let i=0;i<arr.length;i++)
+        {if(i===n)
+            {
+                continue;
+            }
+             else
+            {
+                b.push(arr[i])
+            }
+        }
+        return b
+        
+        // let removed = arr.splice(n,1);
+        // return (arr)
 }
 
 module.exports = {
