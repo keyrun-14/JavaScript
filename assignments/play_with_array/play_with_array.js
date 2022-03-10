@@ -7,15 +7,8 @@ function getEven(arr) {
 
         Write you code below
     */
-   s=[]
-    for(let i=0;i<arr.length;i++)
-    {
-        if (arr[i]%2 === 0)
-        {
-            s.push(arr[i])
-        }
-    }
-    return s
+  
+   return arr.filter((n)=>n%2==0)
 }
 
 function multiplyByN(arr, n) {
@@ -25,16 +18,8 @@ function multiplyByN(arr, n) {
             Input: [1,3,4,55], 3
             Output: [3,9,13,165]
         Write you code below
-    */a=[]
-        for(let i=0;i<arr.length;i++)
-        {
-             
-            {
-                a.push(arr[i]*n)
-            }
-        }
-        return a
-}
+    */
+   return arr.map((k)=>k*n)
 
 function removeNthElement(arr, n) {
     /*
